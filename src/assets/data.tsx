@@ -1,3 +1,24 @@
+import {
+    BarChart3,
+    Calendar,
+    LayoutDashboard,
+    ListTodo,
+    LogOut,
+    MessageCircle,
+    Settings,
+    User,
+} from "lucide-react";
+import { SidebarItem } from "../types";
+import {
+    light,
+    lightGreen,
+    lightGray,
+    dark,
+    darkBlue,
+    darkGray,
+    darkPurple,
+} from "./images";
+
 export const salesData = [
     {
         name: "Product A",
@@ -229,5 +250,101 @@ export const products = [
         paymentStatus: "Pending",
         totalAmount: "50,000.00",
         paymentMethod: "PayPal",
+    },
+];
+
+export const sidebarItems: SidebarItem[] = [
+    {
+        id: "1",
+        label: "Dashboard",
+        icon: <LayoutDashboard />,
+        url: "/",
+    },
+    {
+        id: "2",
+        label: "Analytics",
+        icon: <BarChart3 />,
+        url: "/analytics",
+    },
+    {
+        id: "3",
+        label: "Manage Users",
+        icon: <User />,
+        url: "/manage-users",
+    },
+    {
+        id: "4",
+        label: "Messages",
+        icon: <MessageCircle />,
+        url: "/messages",
+    },
+    {
+        id: "5",
+        label: "Calendar",
+        icon: <Calendar />,
+        url: "/calendar",
+    },
+    {
+        id: "6",
+        label: "Tasks",
+        icon: <ListTodo />,
+        url: "/tasks",
+    },
+    {
+        id: "7",
+        label: "Settings",
+        icon: <Settings />,
+        url: "/settings",
+    },
+    {
+        id: "8",
+        label: "Logout",
+        icon: <LogOut />,
+        url: "/logout",
+    },
+];
+
+export const themeData = [
+    {
+        id: "1",
+        mode: "light",
+        title: "Light",
+        image: light,
+    },
+    {
+        id: "2",
+        mode: "lightGreen",
+        title: "Light Green",
+        image: lightGreen,
+    },
+    {
+        id: "3",
+        mode: "lightGray",
+        title: "Light Gray",
+        image: lightGray,
+    },
+    {
+        id: "4",
+        mode: "dark",
+        title: "Dark",
+        image: dark,
+    },
+    {
+        id: "5",
+        mode: "darkBlue",
+        title: "Dark Blue",
+        image: darkBlue,
+    },
+    {
+        id: "6",
+        mode: "darkGray",
+        title: "Dark Gray",
+        image: darkGray,
+    },
+    {
+        id: "7",
+        mode: "darkPurple",
+        title: "Dark Purple",
+        image: darkPurple,
     },
 ];
