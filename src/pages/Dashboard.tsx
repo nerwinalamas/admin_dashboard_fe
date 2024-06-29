@@ -34,9 +34,11 @@ import {
 
 const Dashboard = () => {
     return (
-        <div className="w-full p-5 mx-auto gap-4 grid grid-cols-1 grid-rows-12 md:grid-cols-2 md:grid-rows-10 lg:grid-cols-4 lg:grid-rows-6 xl:grid-rows-5 bg-gray-200">
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white lg:col-span-2 xl:col-span-1">
-                <h2 className="text-lg font-semibold text-gray-500">Sales</h2>
+        <div className="w-full h-full p-5 gap-4 grid grid-cols-1 grid-rows-12 md:grid-cols-2 md:grid-rows-10 lg:grid-cols-4 lg:grid-rows-6 xl:grid-rows-5 bg-customBackground">
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard lg:col-span-2 xl:col-span-1">
+                <h2 className="text-lg font-semibold text-customSecondary">
+                    Sales
+                </h2>
                 <div className="flex justify-between">
                     <div className="flex flex-col justify-center gap-2">
                         <p className="text-3xl font-bold">250</p>
@@ -60,8 +62,10 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white lg:col-span-2 xl:col-span-1">
-                <h2 className="text-lg font-semibold text-gray-500">Revenue</h2>
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard lg:col-span-2 xl:col-span-1">
+                <h2 className="text-lg font-semibold text-customSecondary">
+                    Revenue
+                </h2>
                 <div className="flex justify-between">
                     <div className="flex flex-col justify-center gap-2">
                         <p className="text-3xl font-bold">1500</p>
@@ -85,8 +89,8 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white lg:col-span-2 xl:col-span-1">
-                <h2 className="text-lg font-semibold text-gray-500">
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard lg:col-span-2 xl:col-span-1">
+                <h2 className="text-lg font-semibold text-customSecondary">
                     Visitors
                 </h2>
                 <div className="flex justify-between">
@@ -112,8 +116,10 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white lg:col-span-2 xl:col-span-1">
-                <h2 className="text-lg font-semibold text-gray-500">Stocks</h2>
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard lg:col-span-2 xl:col-span-1">
+                <h2 className="text-lg font-semibold text-customSecondary">
+                    Stocks
+                </h2>
                 <div className="flex justify-between">
                     <div className="flex flex-col justify-center gap-2">
                         <p className="text-3xl font-bold">84</p>
@@ -137,8 +143,8 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white row-span-2 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 xl:col-span-3 xl:row-span-2">
-                <h2 className="text-lg font-semibold text-gray-500">
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard row-span-2 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 xl:col-span-3 xl:row-span-2">
+                <h2 className="text-lg font-semibold text-customSecondary">
                     Revenue Overview
                 </h2>
                 <div className="w-full h-full">
@@ -182,8 +188,8 @@ const Dashboard = () => {
                     </ResponsiveContainer>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white row-span-2 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 xl:col-span-1">
-                <h2 className="text-lg font-semibold text-gray-500">
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard row-span-2 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 xl:col-span-1">
+                <h2 className="text-lg font-semibold text-customSecondary">
                     Sale by Category
                 </h2>
                 <div className="w-full h-full">
@@ -210,8 +216,8 @@ const Dashboard = () => {
                     </ResponsiveContainer>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white row-span-2 md:col-span-2">
-                <h2 className="text-lg font-semibold text-gray-500">
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard row-span-2 md:col-span-2">
+                <h2 className="text-lg font-semibold text-customSecondary">
                     Top Products
                 </h2>
                 <div className="w-full h-full">
@@ -225,7 +231,9 @@ const Dashboard = () => {
                         <TableBody>
                             {products.map((product) => (
                                 <TableRow key={product.name}>
-                                    <TableCell className="font-medium">{product.name}</TableCell>
+                                    <TableCell className="font-medium">
+                                        {product.name}
+                                    </TableCell>
                                     <TableCell>{product.totalAmount}</TableCell>
                                 </TableRow>
                             ))}
@@ -233,22 +241,18 @@ const Dashboard = () => {
                     </Table>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 p-4 border shadow-md rounded-lg bg-white row-span-2 md:col-span-2">
-                <h2 className="text-lg font-semibold text-gray-500">
+            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard row-span-2 md:col-span-2">
+                <h2 className="text-lg font-semibold text-customSecondary">
                     Recent Sales
                 </h2>
                 <div className="w-full h-full">
                     <Table>
                         <TableHeader>
                             <TableRow>
-                                <TableHead>
-                                    Product
-                                </TableHead>
+                                <TableHead>Product</TableHead>
                                 <TableHead>Status</TableHead>
                                 <TableHead>Method</TableHead>
-                                <TableHead>
-                                    Amount
-                                </TableHead>
+                                <TableHead>Amount</TableHead>
                             </TableRow>
                         </TableHeader>
                         <TableBody>
@@ -263,18 +267,14 @@ const Dashboard = () => {
                                     <TableCell>
                                         {product.paymentMethod}
                                     </TableCell>
-                                    <TableCell>
-                                        {product.totalAmount}
-                                    </TableCell>
+                                    <TableCell>{product.totalAmount}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
-                        <TableFooter>
+                        <TableFooter className="bg-customCard">
                             <TableRow>
                                 <TableCell colSpan={3}>Total</TableCell>
-                                <TableCell>
-                                    85,000.00
-                                </TableCell>
+                                <TableCell>85,000.00</TableCell>
                             </TableRow>
                         </TableFooter>
                     </Table>
