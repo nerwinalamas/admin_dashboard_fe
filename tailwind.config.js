@@ -21,6 +21,12 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"]
       },
       colors: {
+        customBackground: "rgba(var(--background))",
+        customCard: "rgba(var(--card))",
+        customPrimary: "rgba(var(--primaryColor))",
+        customSecondary: "rgba(var(--secondaryColor))",
+        customTertiary: "rgba(var(--tertiaryColor))",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

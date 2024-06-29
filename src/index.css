@@ -1,8 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light {
+  --background: 245, 245, 245;
+  --card: 255, 255, 255;
+
+  --primaryColor: 28, 28, 28;
+  --secondaryColor: 166, 214, 255;
+  --tertiaryColor: 102, 153, 204;
+
+  background: rgba(var(--background));
+}
+
+.lightGreen {
+  --background: 230, 244, 229;
+  --card: 242, 255, 239;
+
+  --primaryColor: 47, 88, 40;
+  --secondaryColor: 171, 203, 167;
+  --tertiaryColor: 115, 155, 113;
+
+  background: rgba(var(--background));
+}
+
+.lightGray {
+  --background: 240, 240, 240;
+  --card: 255, 255, 255;
+
+  --primaryColor: 60, 60, 60;
+  --secondaryColor: 150, 150, 150;
+  --tertiaryColor: 100, 100, 100;
+
+  background: rgba(var(--background));
+}
+
+.dark {
+  --background: 0, 0, 0;
+  --card: 23, 23, 23;
+
+  --primaryColor: 255, 255, 255;
+  --secondaryColor: 120, 144, 156;
+  --tertiaryColor: 86, 110, 117;
+
+  background: rgba(var(--background));
+}
+
+.darkBlue {
+  --background: 23, 41, 58;
+  --card: 33, 56, 79;
+
+  --primaryColor: 255, 255, 255;
+  --secondaryColor: 109, 161, 207;
+  --tertiaryColor: 60, 101, 140;
+
+  background: rgba(var(--background));
+}
+
+.darkGray {
+  --background: 34, 34, 34;
+  --card: 56, 56, 56;
+
+  --primaryColor: 200, 200, 200;
+  --secondaryColor: 117, 117, 117;
+  --tertiaryColor: 80, 80, 80;
+
+  background: rgba(var(--background));
+}
+
+.darkPurple {
+  --background: 31, 14, 51;
+  --card: 49, 25, 73;
+
+  --primaryColor: 255, 255, 255;
+  --secondaryColor: 148, 114, 176;
+  --tertiaryColor: 97, 70, 123;
+
+  background: rgba(var(--background));
+}
 
 @layer base {
     :root {
