@@ -7,9 +7,9 @@ const Sidebar = () => {
 
     return (
         <div
-            className={`w-60 ${
-                isOpen ? "block" : "hidden"
-            } flex flex-col bg-customCard`}
+            className={`w-60 hidden ${
+                isOpen ? "xl:block" : "xl:hidden"
+            } xl:flex xl:flex-col xl:bg-customCard`}
         >
             <div className="w-full h-20 flex items-center justify-center">
                 <Link to="/">
