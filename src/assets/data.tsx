@@ -291,12 +291,12 @@ export const sidebarItems: SidebarItem[] = [
         icon: <Calendar />,
         url: "/calendar",
     },
-    {
-        id: "7",
-        label: "Tasks",
-        icon: <ListTodo />,
-        url: "/tasks",
-    },
+    // {
+    //     id: "7",
+    //     label: "Tasks",
+    //     icon: <ListTodo />,
+    //     url: "/tasks",
+    // },
     {
         id: "8",
         label: "Settings",
