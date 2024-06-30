@@ -35,7 +35,7 @@ const Navbar = () => {
                     </SheetTrigger>
                     <SheetContent
                         side="left"
-                        className="flex flex-col bg-customCard"
+                        className="flex flex-col bg-customCard text-customPrimary"
                     >
                         <SheetHeader>
                             <div className="w-full h-20 flex items-center justify-center">
