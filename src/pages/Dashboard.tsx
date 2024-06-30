@@ -203,7 +203,7 @@ const Dashboard = () => {
                                 paddingAngle={5}
                                 dataKey="value"
                             >
-                                {salesPerCategory.map((entry, index) => (
+                                {salesPerCategory.map((_, index) => (
                                     <Cell
                                         key={`cell-${index}`}
                                         fill={COLORS[index % COLORS.length]}
