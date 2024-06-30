@@ -7,10 +7,7 @@ const Settings = () => {
 
     return (
         <div className="w-full h-full p-5 grid grid-cols-1 grid-rows-1">
-            <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg col-span-1 row-span-1 bg-customCard">
-                <h2 className="text-lg font-semibold text-customSecondary">
-                    Settings
-                </h2>
+            <div className="flex p-4 shadow-md rounded-lg col-span-1 row-span-1 bg-customCard">
                 <div>
                     <h3 className="text-customPrimary border-white border-b-2">
                         Themes
