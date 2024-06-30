@@ -36,7 +36,7 @@ import {
 
 const Analytics = () => {
     return (
-        <div className="w-full h-full p-5 gap-4 grid grid-cols-1 md:grid-cols-2 md:grid-rows-9 lg:grid-cols-4 lg:grid-rows-8 xl:grid-rows-5 bg-customBackground">
+        <div className="w-full h-full p-5 gap-4 grid grid-cols-1 grid-rows-12 md:grid-cols-2 md:grid-rows-9 lg:grid-cols-4 lg:grid-rows-8 xl:grid-rows-5 bg-customBackground">
             <div className="flex flex-col gap-4 p-4 shadow-md rounded-lg bg-customCard lg:col-span-2 xl:col-span-1">
                 <h2 className="text-lg font-semibold text-customSecondary">
                     Sales
