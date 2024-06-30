@@ -20,6 +20,7 @@ const Sidebar = () => {
                 {sidebarItems.map((item) => (
                     <Link
                         to={item.url}
+                        key={item.id}
                         className="flex items-center gap-5 py-2 px-3 rounded-md cursor-pointer hover:bg-white/5"
                     >
                         {item.icon}
