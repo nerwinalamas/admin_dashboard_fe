@@ -8,11 +8,11 @@ const Settings = () => {
     return (
         <div className="w-full h-full p-5 grid grid-cols-1 grid-rows-1">
             <div className="flex p-4 shadow-md rounded-lg col-span-1 row-span-1 bg-customCard">
-                <div>
+                <div className="w-full">
                     <h3 className="text-customPrimary border-white border-b-2">
                         Themes
                     </h3>
-                    <ul className="grid grid-cols-1 place-items-center gap-5 mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <ul className="grid grid-cols-1 place-items-center gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                         {themeData.map((themeItem) => (
                             <li key={themeItem.id}>
                                 <div
