@@ -4,18 +4,19 @@ import {
     Route,
     Outlet,
 } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+import useThemeStore from "./hooks/useTheme";
+import { useEffect } from "react";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Dashboard from "./pages/Dashboard";
 import Analytics from "./pages/Analytics";
+import Products from "./pages/Products";
 import ManageUsers from "./pages/ManageUsers";
 import Messages from "./pages/Messages";
-import Calendar from "./pages/Calendar";
+import CalendarView from "./pages/CalendarView";
 import Tasks from "./pages/Tasks";
 import Settings from "./pages/Settings";
-import useThemeStore from "./hooks/useTheme";
-import { useEffect } from "react";
 import Logout from "./pages/Logout";
 
 const Layout = () => {
@@ -47,9 +48,10 @@ const App = () => {
                     <Route element={<Layout />}>
                         <Route path="/" element={<Dashboard />} />
                         <Route path="/analytics" element={<Analytics />} />
+                        <Route path="/products" element={<Products />} />
                         <Route path="/manage-users" element={<ManageUsers />} />
                         <Route path="/messages" element={<Messages />} />
-                        <Route path="/calendar" element={<Calendar />} />
+                        <Route path="/calendar" element={<CalendarView />} />
                         <Route path="/tasks" element={<Tasks />} />
                         <Route path="/settings" element={<Settings />} />
                         <Route path="/logout" element={<Logout />} />
