@@ -4,6 +4,7 @@ import {
     LayoutDashboard,
     // ListTodo,
     LogOut,
+    MapPin,
     MessageCircle,
     Settings,
     ShoppingCart,
@@ -297,6 +298,12 @@ export const sidebarItems: SidebarItem[] = [
     //     icon: <ListTodo />,
     //     url: "/tasks",
     // },
+    {
+        id: "7",
+        label: "Geography",
+        icon: <MapPin />,
+        url: "/geography",
+    },
     {
         id: "8",
         label: "Settings",
