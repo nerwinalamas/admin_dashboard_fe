@@ -98,6 +98,21 @@
   background: rgba(var(--background));
 }
 
+.highcharts-container {
+  width: 100vw;
+  height: 100%;
+}
+
+.highcharts-map-series path {
+  fill: #ccc;
+  stroke: #666;
+}
+
+.highcharts-map-series path:hover {
+  fill: #595958;
+  stroke: #666;
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;
