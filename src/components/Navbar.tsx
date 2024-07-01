@@ -79,6 +79,8 @@ const Navbar = () => {
                         ? "Calendar"
                         : location.pathname === "/tasks"
                         ? "Tasks"
+                        : location.pathname === "/geography"
+                        ? "Geography"
                         : location.pathname === "/settings"
                         ? "Settings"
                         : ""}
