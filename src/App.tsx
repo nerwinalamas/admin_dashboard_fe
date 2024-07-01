@@ -16,6 +16,7 @@ import ManageUsers from "./pages/ManageUsers";
 import Messages from "./pages/Messages";
 import CalendarView from "./pages/CalendarView";
 import Tasks from "./pages/Tasks";
+import Geography from "./pages/Geography";
 import Settings from "./pages/Settings";
 import Logout from "./pages/Logout";
 
@@ -53,6 +54,7 @@ const App = () => {
                         <Route path="/messages" element={<Messages />} />
                         <Route path="/calendar" element={<CalendarView />} />
                         <Route path="/tasks" element={<Tasks />} />
+                        <Route path="/geography" element={<Geography />} />
                         <Route path="/settings" element={<Settings />} />
                         <Route path="/logout" element={<Logout />} />
                     </Route>
