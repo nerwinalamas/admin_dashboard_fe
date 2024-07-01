@@ -1,9 +1,39 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import mapModule from "highcharts/modules/map";
-import { mapOptions } from "../assets/mapData";
+import { mapData, mapDataPH } from "../assets/mapData";
 
 mapModule(Highcharts);
+
+const mapOptions = {
+    title: {
+        text: "",
+    },
+    series: [
+        {
+            mapData: mapDataPH,
+            name: "Philippines",
+            data: mapData,
+            color: "transparent",
+        },
+    ],
+    chart: {
+        type: "map",
+        backgroundColor: "transparent",
+    },
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: "bottom",
+        },
+    },
+    map: {
+        mapData: Highcharts.maps["custom/world"],
+        mapSize: 5,
+        mapZoom: 5,
+        mapVerticalAlign: "middle",
+    },
+};
 
 const Geography = () => {
     return (

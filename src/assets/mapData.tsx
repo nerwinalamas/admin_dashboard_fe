@@ -1,5 +1,3 @@
-import Highcharts from "highcharts";
-
 export const mapData = [
     ['ph-mn', 10], ['ph-4218', 11], ['ph-tt', 12], ['ph-bo', 13],
     ['ph-cb', 14], ['ph-bs', 15], ['ph-2603', 16], ['ph-su', 17],
@@ -9607,34 +9605,4 @@ export const mapDataPH = {
             },
         },
     ],
-};
-
-export const mapOptions = {
-    title: {
-        text: "",
-    },
-    series: [
-        {
-            mapData: mapDataPH,
-            name: "Philippines",
-            data: mapData,
-            color: "transparent",
-        },
-    ],
-    chart: {
-        type: "map",
-        backgroundColor: "transparent",
-    },
-    mapNavigation: {
-        enabled: true,
-        buttonOptions: {
-            verticalAlign: "bottom",
-        },
-    },
-    map: {
-        mapData: Highcharts.maps["custom/world"],
-        mapSize: 5,
-        mapZoom: 5,
-        mapVerticalAlign: "middle",
-    },
 };
